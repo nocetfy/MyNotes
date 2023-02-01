@@ -124,11 +124,5 @@ export default hopeTheme({
       // vpre: true,
       // vuePlayground: true, // Vue 交互演示
     },
-
-    // rss 属性
-    feed: {
-      rss: true,
-      count: 10,
-    },
   },
 });
