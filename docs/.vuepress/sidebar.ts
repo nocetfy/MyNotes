@@ -60,7 +60,7 @@ export default sidebar([
         children: "structure",
       },
       {
-        text: "哈系表",
+        text: "哈希表",
         icon: "check",
         prefix: "hash/",
         link: "",
