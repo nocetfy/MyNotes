@@ -1,3 +1,6 @@
 [submodule "docs/leetcode"]
 	path = docs/leetcode
 	url = git@github.com:nocetfy/leetcode.git
+[submodule "docs/interview"]
+	path = docs/interview
+	url = git@github.com:nocetfy/interview.git
