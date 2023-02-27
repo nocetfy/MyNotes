@@ -131,6 +131,14 @@ export default sidebar([
         collapsible: true,
         children: "structure",
       },
+      {
+        text: "思维题",
+        icon: "check",
+        prefix: "thought/",
+        link: "",
+        collapsible: true,
+        children: "structure",
+      },
     ],
   },
   {
@@ -140,7 +148,7 @@ export default sidebar([
     link: "",
     collapsible: true,
     children: [
-       {
+      {
         text: "Java",
         icon: "ability",
         prefix: "Java/",
@@ -192,14 +200,6 @@ export default sidebar([
         text: "网络",
         icon: "ability",
         prefix: "网络/",
-        link: "",
-        collapsible: true,
-        children: "structure",
-      },
-      {
-        text: "微服务",
-        icon: "ability",
-        prefix: "微服务/",
         link: "",
         collapsible: true,
         children: "structure",
