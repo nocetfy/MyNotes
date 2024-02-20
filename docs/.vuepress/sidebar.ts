@@ -148,6 +148,14 @@ export default sidebar([
     link: "",
     collapsible: true,
     children: [
+       {
+        text: "计算机基础",
+        icon: "ability",
+        prefix: "计算机基础/",
+        link: "",
+        collapsible: true,
+        children: "structure",
+      },
       {
         text: "Java",
         icon: "ability",
