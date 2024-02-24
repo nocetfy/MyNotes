@@ -19,6 +19,14 @@ export default sidebar([
         children: "structure",
       },
       {
+        text: "数学",
+        icon: "check",
+        prefix: "math/",
+        link: "",
+        collapsible: true,
+        children: "structure",
+      },
+      {
         text: "排序",
         icon: "check",
         prefix: "sort/",
