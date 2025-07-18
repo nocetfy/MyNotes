@@ -1,1 +1,0 @@
-import{_ as t,X as a,Y as c,Z as e,a0 as o}from"./framework-47f15ee6.js";const n={},s=e("h1",{id:"leetcode",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#leetcode","aria-hidden":"true"},"#"),o(" leetcode")],-1),d=e("p",null,"just learn",-1),r=[s,d];function _(l,i){return a(),c("div",null,r)}const f=t(n,[["render",_],["__file","index.html.vue"]]);export{f as default};
