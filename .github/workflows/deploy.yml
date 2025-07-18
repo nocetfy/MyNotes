@@ -14,9 +14,28 @@ jobs:
           token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
           submodules: "true"
 
-      - name: 🚀 deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v2
         with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: docs/.vuepress/dist
-          publish_branch: gh-pages
+          run_install: true
+          version: 8
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: 构建文档
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          pnpm run docs:build
+          > docs/.vuepress/dist/.nojekyll
+
+      - name: 部署文档
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # 这是文档部署到的分支名称
+          branch: gh-pages
+          folder: docs/.vuepress/dist
